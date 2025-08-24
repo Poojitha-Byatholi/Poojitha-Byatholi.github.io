@@ -161,9 +161,11 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
     clickable: true,
   },
 });
+
 let swiperTestimonial = new Swiper(".testimonial-container", {
+  cssMode: true,
   loop: true,
-  spaceBetween: 30,   // gap between testimonials
+  spaceBetween: 48,
 
   pagination: {
     el: ".swiper-pagination",
@@ -171,14 +173,8 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
   },
 
   breakpoints: {
-    0: {
-      slidesPerView: 1,   // mobile → 1 testimonial
-    },
-    768: {
-      slidesPerView: 2,   // tablet → 2 testimonials
-    },
-    1024: {
-      slidesPerView: 3,   // desktop → 3 testimonials
+    568: {
+      slidesPerView: 2,
     },
   },
 });
