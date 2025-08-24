@@ -148,21 +148,6 @@ themeButton.addEventListener("click", () => {
 
 //swiper
 let swiperPortfolio = new Swiper(".portfolio-container", {
-  cssMode: true,
-  loop: true,
-
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
-
-let swiperPortfolio = new Swiper(".portfolio-container", {
   loop: true,
   spaceBetween: 20,   // gap between cards
 
@@ -185,6 +170,27 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
     },
     1024: {
       slidesPerView: 3,   // desktop → 3 cards
+    },
+  },
+});
+let swiperTestimonial = new Swiper(".testimonial-container", {
+  loop: true,
+  spaceBetween: 30,   // gap between testimonials
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    0: {
+      slidesPerView: 1,   // mobile → 1 testimonial
+    },
+    768: {
+      slidesPerView: 2,   // tablet → 2 testimonials
+    },
+    1024: {
+      slidesPerView: 3,   // desktop → 3 testimonials
     },
   },
 });
