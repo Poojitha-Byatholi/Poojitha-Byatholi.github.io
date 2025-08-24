@@ -162,10 +162,14 @@ let swiperPortfolio = new Swiper(".portfolio-container", {
   },
 });
 
-let swiperTestimonial = new Swiper(".testimonial-container", {
-  cssMode: true,
+let swiperPortfolio = new Swiper(".portfolio-container", {
   loop: true,
-  spaceBetween: 48,
+  spaceBetween: 20,   // gap between cards
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
   pagination: {
     el: ".swiper-pagination",
@@ -173,8 +177,14 @@ let swiperTestimonial = new Swiper(".testimonial-container", {
   },
 
   breakpoints: {
-    568: {
-      slidesPerView: 2,
+    0: {
+      slidesPerView: 1,   // mobile → 1 card
+    },
+    768: {
+      slidesPerView: 2,   // tablet → 2 cards
+    },
+    1024: {
+      slidesPerView: 3,   // desktop → 3 cards
     },
   },
 });
