@@ -481,80 +481,66 @@
 </section>
 
      <!-- portfolio -->
-<section class="portfolio section" id="portfolio">
-  <h2 class="section-title">Projects</h2>
-  <span class="section-subtitle">Most Recent Work</span>
+<section class="project section" id="projects">
+  <h2 class="section__title">Projects</h2>
+  <span class="section__subtitle">Most Recent Work</span>
 
-  <div class="portfolio-container container swiper-container">
+  <div class="swiper project__container">
     <div class="swiper-wrapper">
-      <!-- Project 1: Smart Resume Analyzer -->
-      <div class="portfolio-content grid swiper-slide">
-        <img src="project1.png" alt="" class="portfolio-img" />
-        <div class="portfolio-data">
-          <h3 class="portfolio-title">Smart Resume Analyzer</h3>
-          <p class="portfolio-description">
-            NLP-based web application that analyzes resumes and recommends best-matching job roles using Python, spaCy, and Streamlit.
+
+      <!-- Project 1 -->
+      <div class="swiper-slide">
+        <img src="assets/img/resume-analyzer.png" alt="Smart Resume Analyzer" class="project__img">
+        <div class="project__data">
+          <h3 class="project__title">Smart Resume Analyzer</h3>
+          <p class="project__description">
+            NLP-based web app that analyzes resumes and recommends job roles using Python, spaCy, and Streamlit.
           </p>
-          <a
-            href="https://github.com/Poojitha-Byatholi/smart-resume-analyzer"
-            target="_blank"
-            class="button button-flex button-small portfolio-button"
-          >
-            Project Link
-            <i class="fa-solid fa-arrow-right button-icon"></i>
+          <a href="https://github.com/your-username/smart-resume-analyzer" class="button button--flex button--small project__button" target="_blank">
+            Project Link <i class="uil uil-arrow-right button__icon"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project 2: Product Landing Page -->
-      <div class="portfolio-content grid swiper-slide">
-        <img src="Project2.png" alt="" class="portfolio-img" />
-        <div class="portfolio-data">
-          <h3 class="portfolio-title">Product Landing Page</h3>
-          <p class="portfolio-description">
-            Visually appealing and fully responsive landing page designed with HTML, CSS, and JavaScript focused on layout, UX, and responsiveness.
+      <!-- Project 2 -->
+      <div class="swiper-slide">
+        <img src="assets/img/weather-app.png" alt="Weather Forecast Website" class="project__img">
+        <div class="project__data">
+          <h3 class="project__title">Weather Forecast Website</h3>
+          <p class="project__description">
+            Responsive React.js app that fetches real-time weather updates and forecasts using OpenWeather API.
           </p>
-          <a
-            href="https://github.com/Poojitha-Byatholi/Product-Landing-Page"
-            target="_blank"
-            class="button button-flex button-small portfolio-button"
-          >
-            Project Link
-            <i class="fa-solid fa-arrow-right button-icon"></i>
+          <a href="https://github.com/your-username/weather-forecast" class="button button--flex button--small project__button" target="_blank">
+            Project Link <i class="uil uil-arrow-right button__icon"></i>
           </a>
         </div>
       </div>
 
-      <!-- Project 3: Face Recognition Attendance System -->
-      <div class="portfolio-content grid swiper-slide">
-        <img src="Project3.png" alt="" class="portfolio-img" />
-        <div class="portfolio-data">
-          <h3 class="portfolio-title">Face Recognition Attendance System</h3>
-          <p class="portfolio-description">
-            AI-powered attendance system built using Python and OpenCV, enabling contactless, accurate face recognition-based check-ins.
+      <!-- Project 3 -->
+      <div class="swiper-slide">
+        <img src="assets/img/face-recognition.png" alt="Face Recognition Attendance System" class="project__img">
+        <div class="project__data">
+          <h3 class="project__title">Face Recognition Attendance System</h3>
+          <p class="project__description">
+            Automated attendance system using Python and OpenCV, enabling accurate and contactless face recognition.
           </p>
-          <a
-            href="https://github.com/Poojitha-Byatholi/P2-Attendance-Management-System"
-            target="_blank"
-            class="button button-flex button-small portfolio-button"
-          >
-            Project Link
-            <i class="fa-solid fa-arrow-right button-icon"></i>
+          <a href="https://github.com/your-username/face-recognition-attendance" class="button button--flex button--small project__button" target="_blank">
+            Project Link <i class="uil uil-arrow-right button__icon"></i>
           </a>
         </div>
       </div>
+
     </div>
-    <div class="swiper-angles">
-      <div class="swiper-button-next">
-        <i class="fa-solid fa-angle-right swiper-icon"></i>
-      </div>
-      <div class="swiper-button-prev">
-        <i class="fa-solid fa-angle-left swiper-icon"></i>
-      </div>
-    </div>
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Add Pagination -->
     <div class="swiper-pagination"></div>
   </div>
 </section>
+
 
       <!-- contact me  -->
       <section class="contact section" id="contact">
